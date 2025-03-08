@@ -639,7 +639,7 @@ az network private-endpoint dns-zone-group create --resource-group $ResourceGrou
 
 #region Present Output
 
-Write-host "✅ If the intallation completed without error complete the folllowing checklist:"
+Write-host "✅ If the installation completed without error complete the folllowing checklist:"
 if ($ISLoginAppProvided) {  #If provided then show the user where to add the landing page in AAD, otherwise script did this already for the user.
 	Write-host "   🔵 Add The following URLs to the multi-tenant Landing Page AAD App Registration in Azure Portal:"
 	Write-host "      ➡️ https://$WebAppNamePrefix-portal.azurewebsites.net"
