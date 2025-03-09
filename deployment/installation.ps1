@@ -6,7 +6,7 @@ dotnet tool install --global dotnet-ef --version 8.0.0; `
 git clone https://github.com/AlexBeyd/Commercial-Marketplace-SaaS-Accelerator.git --depth 1; `
 cd ./Commercial-Marketplace-SaaS-Accelerator/deployment; `
 .\Deploy.ps1 `
- -WebAppNamePrefix "saas-ottest01" `
+ -WebAppNamePrefix "saasottest01" `
  -ResourceGroupForDeployment "saas-accelerator-studies" `
  -PublisherAdminUsers "beyderman.alex@gmail.com" `
  -Location "Canada Central" 
