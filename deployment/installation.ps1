@@ -8,5 +8,5 @@ cd ./Commercial-Marketplace-SaaS-Accelerator/deployment; `
 .\Deploy.ps1 `
  -WebAppNamePrefix "aremo-saasottest01" `
  -ResourceGroupForDeployment "saas-accelerator-studies-v8" `
- -PublisherAdminUsers "beyderman.alex@gmail.com" `
+ -PublisherAdminUsers "alexbeyd@outlook.com" `
  -Location "Canada Central" 

@@ -40,7 +40,7 @@
     <div class="mycontainer" style="height:auto; min-height: 100vh; padding-top: 55px;">
         <div class="class1" style="text-decoration:none;">
             <div>
-                <button class="navbar-toggler format-left"  style="padding-right:15%;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" color="#c2c2c2" aria-label="Toggle navigation">
+                <button class="navbar-toggler format-left" style="padding-right:15%;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" color="#c2c2c2" aria-label="Toggle navigation">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                          width="24" height="24"
                          viewBox="0 0 172 172"
@@ -50,7 +50,7 @@
                 </button>
 
                 <nav class="container nav flex-column nav-underline">
-                    
+
                     @if (this.User.Identity.IsAuthenticated)
                     {
                         <div>
@@ -150,13 +150,14 @@
         <div class="class2">
             <br />
             <div class="container-fluid" style="padding-bottom: 1rem !important;">
-                
+
                 <partial name="_CookieConsentPartial" />
                 <main role="main" style="padding-bottom: 1rem !important;">
                     @RenderBody()
+
                 </main>
-                
-                
+
+
             </div>
         </div>
     </div>
@@ -178,22 +179,22 @@
 
     @RenderSection("Scripts", required: false)
 
- <script type="text/javascript">
-     function RedirectToScheduler(sub)
-    {   
-        var dim =$("select#SelectedDimension").val();
-        var qty =$("#Quantity").val();
-        if (sub)
+    <script type="text/javascript">
+         function RedirectToScheduler(sub)
         {
-            window.location.href="/scheduler/NewScheduler?subscriptionId="+sub+"&dimId="+dim+"&quantity="+qty;
-        }
-        else
-        {
-            alert("Please Select Subscription value first")
-        }
+            var dim =$("select#SelectedDimension").val();
+            var qty =$("#Quantity").val();
+            if (sub)
+            {
+                window.location.href="/scheduler/NewScheduler?subscriptionId="+sub+"&dimId="+dim+"&quantity="+qty;
+            }
+            else
+            {
+                alert("Please Select Subscription value first")
+            }
 
-    }
-</script>
+        }
+    </script>
 </body>
 </html>
 
